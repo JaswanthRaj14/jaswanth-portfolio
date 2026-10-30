@@ -146,26 +146,34 @@ export const currentlyBuilding: BuildingProject[] = [
 ],
     stack: [],
   },
-  {
-    title: 'Flight Fare Analysis and Prediction',
-    slug: 'flight-fare-prediction',
-    status: 'In Progress',
-    description:
-      'Exploring what drives flight ticket prices and building a model to estimate fares from route and booking characteristics.',
-    objectives: [
-      'Explore the dataset and understand fare distributions',
-      'Clean the data and prepare it for analysis',
-    ],
-    milestones: [
-  { label: 'Data loading and initial inspection', done: true },
-  { label: 'Missing-value and duplicate checks', done: true },
-  { label: 'Data cleaning and preprocessing', done: false },
-  { label: 'Exploratory data analysis (EDA)', done: false },
-  { label: 'Feature engineering', done: false },
-  { label: 'Model training', done: false },
-  { label: 'Evaluation', done: false },
-  { label: 'Deployment and documentation', done: false },
-],
-    stack: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Scikit-learn'],
-  },
+  
+{
+  title: 'FIFA 20 Player Analytics',
+  slug: 'fifa20-player-analytics',
+  status: 'Planning',
+  description:
+    'Exploring FIFA 20 player data to uncover performance patterns, compare player attributes, and identify opportunities for machine learning applications.',
+  objectives: [
+    'Inspect the FIFA 20 dataset and understand its structure',
+    'Identify important player attributes and potential analysis directions',
+  ],
+  milestones: [
+    { label: 'Dataset loading and initial inspection', done: false },
+    { label: 'Data quality assessment', done: false },
+    { label: 'Data cleaning and preprocessing', done: false },
+    { label: 'Exploratory data analysis (EDA)', done: false },
+    { label: 'Feature engineering', done: false },
+    { label: 'Project scope and problem definition', done: false },
+    { label: 'Model development', done: false },
+    { label: 'Evaluation and documentation', done: false },
+  ],
+  stack: [
+    'Python',
+    'Pandas',
+    'NumPy',
+    'Matplotlib',
+    'Seaborn',
+    'Scikit-learn',
+  ],
+},
 ]
