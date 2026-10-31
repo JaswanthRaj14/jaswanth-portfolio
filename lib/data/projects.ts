@@ -113,33 +113,97 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/JaswanthRaj14/Forest-Cover-Prediction',
     demoUrl: 'https://forest-cover-prediction-dm3gypgxmgmbpwnyeozxnv.streamlit.app/',
   },
-  {
-    slug: 'flight-fare-prediction',
-    title: 'Flight Fare Analysis and Prediction',
-    categories: ['Data Science', 'Machine Learning'],
-    status: 'In Progress',
-    featured: true,
-    summary:
-      'An ongoing project involving flight fare data exploration, data cleaning, route analysis, feature engineering, and predictive modeling.',
-    problem:
-      'What drives flight ticket prices, and how well can fares be estimated from route and booking characteristics?',
-    objectives: [
-      'Explore the dataset and understand fare distributions.',
-      'Clean the data and prepare it for analysis.',
-      'Engineer features from route and booking characteristics.',
-      'Train and evaluate a model to estimate fares.',
-    ],
-    preprocessing: ['Data cleaning is a planned milestone and has not been completed yet.'],
-    methodology: [
-      'Planned workflow: data exploration → data cleaning → feature engineering → model training → evaluation → deployment.',
-    ],
-    cardTags: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Scikit-learn'],
-    tools: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Scikit-learn'],
-    resultsNote: 'This project is in progress. Results will be published once evaluation is complete.',
-    lessons: [],
-    repoUrl: 'https://github.com/JaswanthRaj14',
-    repoIsProfile: true,
-  },
+  
+
+{
+  slug: 'flight-fare-prediction',
+  title: 'Flight Fare Analysis and Prediction',
+  categories: ['Data Science', 'Machine Learning'],
+  status: 'Completed',
+  featured: true,
+
+  summary:
+    'An end-to-end flight fare analysis and prediction project involving data cleaning, exploratory data analysis, feature engineering, machine learning, and deployment.',
+
+  problem:
+    'What drives flight ticket prices, and how well can fares be estimated from route and booking characteristics?',
+
+  objectives: [
+    'Explore the dataset and understand fare distributions.',
+    'Clean the data and prepare it for analysis.',
+    'Engineer features from route and booking characteristics.',
+    'Train and evaluate machine learning models.',
+    'Deploy the application for interactive fare prediction.',
+  ],
+
+  preprocessing: [
+    'Inspected the dataset and identified missing values and duplicate records.',
+    'Performed data cleaning and preprocessing.',
+    'Prepared relevant features for machine learning.',
+  ],
+
+  methodology: [
+    'Dataset inspection and exploratory data analysis.',
+    'Data cleaning and preprocessing.',
+    'Feature engineering and transformation.',
+    'Machine learning model training and comparison.',
+    'Model evaluation and selection.',
+    'Application development using FastAPI and Streamlit.',
+    'Deployment of the working application.',
+  ],
+
+  metrics: [
+  { label: 'Mean Absolute Error (MAE)', value: '₹643.17' },
+  { label: 'Root Mean Squared Error (RMSE)', value: '₹1,509.57' },
+  { label: 'R² Score', value: '0.8907' },
+  { label: 'Variance Explained', value: '89.07%' },
+  ],
+
+  findings: [
+  'Successfully developed and deployed a flight fare prediction application.',
+  'Achieved an R² score of 0.8907 on the evaluation dataset.',
+  'Obtained an MAE of ₹643.17 and RMSE of ₹1,509.57.',
+  'Integrated the trained model with FastAPI and Streamlit.',
+],
+
+lessons: [
+  'Handling missing values and duplicate records during data preparation.',
+  'Working with categorical and route-related features.',
+  'Understanding the importance of feature engineering.',
+  'Integrating machine learning models with FastAPI and Streamlit.',
+  'Deploying and maintaining a machine learning application.',
+],
+
+
+  cardTags: [
+    'Python',
+    'Pandas',
+    'NumPy',
+    'Matplotlib',
+    'Seaborn',
+    'Scikit-learn',
+    'FastAPI',
+    'Streamlit',
+  ],
+
+  tools: [
+    'Python',
+    'Pandas',
+    'NumPy',
+    'Matplotlib',
+    'Seaborn',
+    'Scikit-learn',
+    'FastAPI',
+    'Streamlit',
+  ],
+
+  resultsNote:
+    'Successfully completed and deployed a working flight fare prediction application.',
+
+  repoUrl: 'https://github.com/JaswanthRaj14/Flight-Fare-Prediction',
+  demoUrl: 'https://flight-fare-prediction-f3coqgewgrkjfjk6uykqfe.streamlit.app/',
+},
+
   {
     slug: 'healthcare-readmission-analysis',
     title: 'Healthcare Readmission Risk Analysis',
