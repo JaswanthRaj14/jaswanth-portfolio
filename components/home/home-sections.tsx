@@ -177,7 +177,10 @@ export function ContactCta() {
     <section aria-labelledby="contact-cta">
       <Container className="pb-20">
         <Reveal className="relative overflow-hidden rounded-2xl border border-primary/30 bg-card p-6 text-center sm:p-12">
-          <div className="ambient-bg pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
+          <div
+  className="pointer-events-none absolute inset-0 opacity-60 bg-[radial-gradient(40%_35%_at_20%_15%,oklch(0.82_0.13_205/0.13),transparent_70%),radial-gradient(35%_30%_at_85%_25%,oklch(0.74_0.13_295/0.11),transparent_70%),radial-gradient(45%_40%_at_50%_95%,oklch(0.82_0.13_205/0.06),transparent_70%)]"
+  aria-hidden="true"
+/>
           <div className="relative">
             <h2 id="contact-cta" className="text-balance text-2xl font-semibold tracking-tight sm:text-4xl">
               {"Let's build something with data"}
