@@ -273,6 +273,112 @@ lessons: [
     ],
     repoUrl: 'https://github.com/JaswanthRaj14/-Healthcare-Readmission-Risk-Analysis',
   },
+
+  {
+    slug: 'fifa20-player-intelligence',
+    title: 'FIFA 20 Player Analytics & Intelligence Platform',
+    categories: ['Data Science', 'Machine Learning'],
+    status: 'Completed',
+    featured: true,
+
+    summary:
+      'An end-to-end football analytics platform combining exploratory data analysis, machine learning, FastAPI, and React. Explore player statistics, compare football players, and estimate market values using a trained Gradient Boosting Regressor.',
+
+    problem:
+      'How can FIFA 20 player attributes be transformed into interactive insights and used to estimate player market values?',
+
+    objectives: [
+      'Explore and analyze FIFA 20 player attributes.',
+      'Build interactive player analytics and comparison dashboards.',
+      'Develop and evaluate regression models for market value estimation.',
+      'Build a REST API using FastAPI for player data and predictions.',
+      'Integrate the backend with a React frontend.',
+      'Deploy the complete application for public access.',
+    ],
+
+    dataset: {
+      name: 'FIFA 20 Player Dataset',
+      description: [
+        '18,278 player records and 104 original columns.',
+        'Includes player age, nationality, club, position, overall rating, potential, wages, and market value.',
+      ],
+    },
+
+    preprocessing: [
+      'Inspected the dataset and analyzed missing values.',
+      'Performed data cleaning and feature engineering.',
+      'Prepared 73 model features, including numeric and categorical attributes.',
+      'Removed the target variable from the predictor features to prevent target leakage.',
+    ],
+
+    methodology: [
+      'Performed exploratory data analysis on FIFA 20 player attributes.',
+      'Trained and compared Linear Regression, Random Forest, and Gradient Boosting models.',
+      'Selected Gradient Boosting based on its evaluation results.',
+      'Saved the trained model and preprocessing artifacts using Joblib.',
+      'Developed REST API endpoints using FastAPI.',
+      'Built an interactive React dashboard using Vite.',
+      'Deployed the frontend on Vercel and backend on Render.',
+    ],
+
+    cardTags: [
+      'Python',
+      'Scikit-learn',
+      'FastAPI',
+      'React',
+      'Machine Learning',
+    ],
+
+    tools: [
+      'Python',
+      'Pandas',
+      'NumPy',
+      'Scikit-learn',
+      'Joblib',
+      'FastAPI',
+      'React',
+      'Vite',
+      'Axios',
+      'Recharts',
+      'Git & GitHub',
+      'Render',
+      'Vercel',
+    ],
+
+    metrics: [
+      { label: 'Players analyzed', value: '18,278' },
+      { label: 'Original dataset columns', value: '104' },
+      { label: 'Model features', value: '73' },
+      { label: 'MAE', value: '€194,564.71' },
+      { label: 'RMSE', value: '€615,623.89' },
+      { label: 'R² Score', value: '0.9871' },
+    ],
+
+    findings: [
+      'Gradient Boosting achieved an R² score of 0.9871.',
+      'The model achieved an MAE of €194,564.71 and RMSE of €615,623.89.',
+      'Overall rating was the most influential feature in the recorded feature-importance analysis.',
+      'Successfully integrated machine learning predictions into a deployed web application.',
+    ],
+
+    resultsNote:
+      'The prediction endpoint updates user-provided attributes while retaining other model features from a saved default player profile. Predictions should therefore be interpreted with this limitation in mind.',
+
+    lessons: [
+      'Understanding the complete machine learning development lifecycle.',
+      'Preventing target leakage during model development.',
+      'Integrating machine learning models with REST APIs.',
+      'Connecting React frontend applications with FastAPI backends.',
+      'Deploying and troubleshooting a full-stack machine learning application.',
+    ],
+
+    repoUrl:
+      'https://github.com/JaswanthRaj14/FIFA20-Players-Analytics',
+
+    demoUrl:
+      'https://fifa-20-players-analytics.vercel.app/',
+  },
+
   {
     slug: 'credit-card-fraud-detection',
     title: 'Credit Card Fraud Detection',
